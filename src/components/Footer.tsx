@@ -1,26 +1,25 @@
-
-import { X, Send, Linkedin } from "lucide-react";
+import { X, Send, Linkedin } from "lucide-react"
 
 const socials = [
   {
     label: "X",
     href: "https://x.com/flipvault",
     Icon: X,
-    iconClassName: "text-white"
+    iconClassName: "text-white",
   },
   {
     label: "Telegram",
     href: "https://t.me/flipvault",
     Icon: Send,
-    iconClassName: "text-[#229ED9]"
+    iconClassName: "text-[#229ED9]",
   },
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/company/flipvault",
     Icon: Linkedin,
-    iconClassName: "text-[#0077b5]"
+    iconClassName: "text-[#0077b5]",
   },
-];
+]
 
 const Footer = () => (
   <footer className="w-full py-10 px-5 flex flex-col items-center bg-white/80 dark:bg-[#171731dd] border-t border-gray-200 dark:border-gray-700 mt-16 relative z-10">
@@ -39,15 +38,14 @@ const Footer = () => (
           `}
           style={{ width: 44, height: 44 }}
         >
-          <Icon
-            size={28}
-            className={iconClassName}
-          />
+          <Icon size={28} className={iconClassName} />
         </a>
       ))}
     </div>
-    <div className="text-gray-700 font-semibold text-xs">&copy; {new Date().getFullYear()} Flipvault. All rights reserved.</div>
+    <div className="text-gray-700 font-semibold text-xs">
+      &copy; {new Date().getFullYear()} Flipvault. All rights reserved.
+    </div>
   </footer>
-);
+)
 
-export default Footer;
+export default Footer
